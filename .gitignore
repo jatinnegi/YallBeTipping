@@ -1,0 +1,57 @@
+# Ignore system files and temporary files
+.DS_Store
+Thumbs.db
+
+# Ignore build and output directories
+/build/
+/dist/
+/output/
+
+# Ignore node_modules if using Node.js
+node_modules/
+
+# Ignore Python cache files if using Python
+__pycache__/
+*.py[cod]
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore Storyboard-specific files (adjust based on tools used)
+.storyboardtemp/
+.storyboardcache/
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore environment variables and secrets
+.env
+.env.local
+
+# Ignore macOS specific files
+.AppleDouble
+.LSOverride
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore test results
+/test-results/
+*.testlog
+
+# Ignore assets cache
+/assets/cache/
+
+# Add any additional ignores specific to your project setup here
