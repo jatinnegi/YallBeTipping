@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B2295D8B2D2C6F99000C4E1A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B2295D8A2D2C6F95000C4E1A /* .gitignore */; };
+		B2295D8D2D2C6FD1000C4E1A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B2295D8C2D2C6FCA000C4E1A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2295D8A2D2C6F95000C4E1A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B2295D8C2D2C6FCA000C4E1A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B25DF4902D2A8640001229A3 /* YallBeTipping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YallBeTipping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 				B28A9FF22D2833BB0001C5ED /* YallBeTipping */,
 				B25DF4902D2A8640001229A3 /* YallBeTipping.app */,
 				B2295D8A2D2C6F95000C4E1A /* .gitignore */,
+				B2295D8C2D2C6FCA000C4E1A /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2295D8B2D2C6F99000C4E1A /* .gitignore in Resources */,
+				B2295D8D2D2C6FD1000C4E1A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
