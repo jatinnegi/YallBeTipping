@@ -1,1 +1,1 @@
-# Food Order App with option to tipping
+## Food ordering app with option to tip
