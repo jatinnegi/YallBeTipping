@@ -5,16 +5,33 @@ This app contains 4 `UIViewController`s embedded inside a `NavigationController`
 1. **Home View Controller:**
     * This is the app's main entry point.
     * Elements used are `UITableView`, `UITableViewCell`, `UILabel` and `UIButton`.
-    * ![Home-View](./assets/home-view-img.png)
 2. **Confirm View Controller:**
     * This is the second UI Controller in the app.
     * Elements used are `UITableView`, `UITableViewCell`, `UILabel` and `UIButton`
-    * ![Confirm-View](./assets/confirm-view-img.png)
 3. **Tip View Controller:**
     * This is the third UI Controller in the app.
     * This `UIControllerView` consists only `UIButton`
-    * ![Tip-View](./assets/tip-view-img.png)
 4. **Receipt View Controller:**
     * This is the last UI Controller in the app
     * Elements used are `UITableView`, `UITableViewCell` and `UILabel`
-    * ![Receipt-View](./assets/receipt-view-img.png)
+
+<table>
+  <tr>
+    <td>
+        <p align="center"><strong>Home View Controller</strong></p>
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/home-view-img.png" alt="Placeholder 1" width="100%" />
+    </td>
+    <td>
+        <p align="center"><strong>Confirm View Controller</strong></p>
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/confirm-view-img.png" alt="Placeholder 2" width="100%" />
+    </td>
+    <td>
+        <p align="center"><strong>Tip View Controller</strong></p>
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/tip-view-img.png" alt="Placeholder 3" width="100%" />
+    </td>
+    <td>
+        <p align="center"><strong>Receipt View Controller</strong></p>
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/receipt-view-img.png" alt="Placeholder 4" width="100%" />
+    </td>
+  </tr>
+</table>
