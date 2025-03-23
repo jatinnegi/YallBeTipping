@@ -54,29 +54,29 @@ The following are the 4 topics that were covered in this app:
     * Programmatically navigate to other view controllers using `UIBarButtonItem` element.
     
     ```swift
-        // Following code programmatically pushes the control to the next view controller
+    // Following code programmatically pushes the control to the next view controller
         
-        lazy var barButton: UIBarButtonItem = {
-            let button = UIBarButtonItem(
-                title: "Submit",
-                style: .plain,
-                target: self,
-                action: #selector(didTapBarButton)
-            )
-            return button
-        }()
-        
-        @objc func didTapBarButton() {
-            let sb = UIStoryboard(
-                name: TipVC.id,
-                bundle: nil
-            )
-                
-            let vc = sb.instantiateViewController(identifier: TipVC.id) { [unowned self] coder in
-                let tipVC = TipVC(coder: coder, items: items)
-                return tipVC
-            }
+    lazy var barButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(
+            title: "Submit",
+            style: .plain,
+            target: self,
+            action: #selector(didTapBarButton)
+        )
+        return button
+    }()
+    
+    @objc func didTapBarButton() {
+        let sb = UIStoryboard(
+            name: TipVC.id,
+            bundle: nil
+        )
             
-            pushVC(vc)
+        let vc = sb.instantiateViewController(identifier: TipVC.id) { [unowned self] coder in
+            let tipVC = TipVC(coder: coder, items: items)
+            return tipVC
         }
+        
+        pushVC(vc)
+    }
     ```
