@@ -15,49 +15,33 @@ This app contains 4 `UIViewController`s embedded inside a `NavigationController`
     * This is the last UI Controller in the app
     * Elements used are `UITableView`, `UITableViewCell` and `UILabel`
 
-<style>
-  .table-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .table-container td {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 23%;
-  }
-  .table-container img {
-    height: 150px; /* Set a fixed height for images */
-    width: auto;
-  }
-  .table-container p {
-    height: 50px; /* Set a fixed height for paragraphs */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-  }
-</style>
-
-<div class="table-container">
-  <table>
-    <tr>
-      <td>
-          <p align="center"><strong>Home VC</strong></p>
-          <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/home-view-img.png" alt="Placeholder 1" width="100%">
-      </td>
-      <td>
-          <p align="center"><strong>Confirm VC</strong></p>
-          <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/confirm-view-img.png" alt="Placeholder 2" width="100%">
-      </td>
-      <td>
-          <p align="center"><strong>Tip VC</strong></p>
-          <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/tip-view-img.png" alt="Placeholder 3" width="100%">
-      </td>
-      <td>
-          <p align="center"><strong>Receipt VC</strong></p>
-          <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/receipt-view-img.png" alt="Placeholder 4" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
+<table>
+  <tr>
+    <td width="25%">
+      <p align="center"><strong>Home VC</strong></p>
+    </td>
+    <td width="25%">
+      <p align="center"><strong>Confirm VC</strong></p>
+    </td>
+    <td width="25%">
+      <p align="center"><strong>Tip VC</strong></p>
+    </td>
+    <td width="25%">
+      <p align="center"><strong>Receipt VC</strong></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%">
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/home-view-img.png" alt="Placeholder 1" width="100%">
+    </td>
+    <td width="25%">
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/confirm-view-img.png" alt="Placeholder 2" width="100%">
+    </td>
+    <td width="25%">
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/tip-view-img.png" alt="Placeholder 3" width="100%">
+    </td>
+    <td width="25%">
+        <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/receipt-view-img.png" alt="Placeholder 4" width="100%">
+    </td>
+  </tr>
+</table>
