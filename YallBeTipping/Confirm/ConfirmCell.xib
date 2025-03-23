@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfirmCell" rowHeight="103" id="KGk-i7-Jjw" customClass="ConfirmCell" customModule="YallBeTipping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="soJ-vD-YP1">
+                        <rect key="frame" x="347" y="5" width="93" height="93"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="soJ-vD-YP1" secondAttribute="height" multiplier="1:1" id="QUt-99-rsR"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="zcp-P9-hrZ">
+                        <rect key="frame" x="292" y="5" width="45" height="93"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btW-GU-Edy">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapPlusButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CMk-ae-w4e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or0-yM-Mho">
+                                <rect key="frame" x="0.0" y="36" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ras-NG-pgl">
+                                <rect key="frame" x="0.0" y="57" width="45" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapMinusButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="puv-2u-iA3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="0aU-ZG-JpF"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HbX-yP-Xwv">
+                        <rect key="frame" x="20" y="5" width="262" height="93"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-W7-6A3">
+                                <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="46.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-Bl-kvI">
+                                <rect key="frame" x="0.0" y="46.666666666666657" width="52" height="46.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="soJ-vD-YP1" firstAttribute="leading" secondItem="zcp-P9-hrZ" secondAttribute="trailing" constant="10" id="KlM-Bt-V90"/>
+                    <constraint firstAttribute="bottom" secondItem="HbX-yP-Xwv" secondAttribute="bottom" constant="5" id="Maa-By-dtD"/>
+                    <constraint firstItem="HbX-yP-Xwv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TSa-hS-RkE"/>
+                    <constraint firstAttribute="bottom" secondItem="soJ-vD-YP1" secondAttribute="bottom" constant="5" id="V1e-e3-yDt"/>
+                    <constraint firstAttribute="trailing" secondItem="soJ-vD-YP1" secondAttribute="trailing" constant="12" id="Vh3-2q-Xoe"/>
+                    <constraint firstItem="zcp-P9-hrZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="j2i-ad-th4"/>
+                    <constraint firstItem="HbX-yP-Xwv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lNO-sB-cXw"/>
+                    <constraint firstItem="zcp-P9-hrZ" firstAttribute="leading" secondItem="HbX-yP-Xwv" secondAttribute="trailing" constant="10" id="ms8-Md-asT"/>
+                    <constraint firstItem="soJ-vD-YP1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tVW-W5-kfa"/>
+                    <constraint firstAttribute="bottom" secondItem="zcp-P9-hrZ" secondAttribute="bottom" constant="5" id="vIz-fY-xWl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countLabel" destination="or0-yM-Mho" id="0Ot-Aj-H1e"/>
+                <outlet property="img" destination="soJ-vD-YP1" id="U1d-zn-yee"/>
+                <outlet property="minusButton" destination="ras-NG-pgl" id="Zre-HZ-9ef"/>
+                <outlet property="nameLabel" destination="yl2-W7-6A3" id="5aR-qT-CnK"/>
+                <outlet property="plusButton" destination="btW-GU-Edy" id="w3i-xv-3dt"/>
+                <outlet property="priceLabel" destination="Tdf-Bl-kvI" id="UFo-kX-2AT"/>
+            </connections>
+            <point key="canvasLocation" x="62.595419847328245" y="-0.35211267605633806"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="minus" catalog="system" width="128" height="26"/>
+        <image name="pizza" width="500" height="500"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

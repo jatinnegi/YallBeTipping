@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TipVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TipVC" id="Y6W-OH-hqX" customClass="TipVC" customModule="YallBeTipping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-n5-idG">
+                                <rect key="frame" x="20" y="778" width="353" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UbD-Eu-qRU"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip"/>
+                                <connections>
+                                    <action selector="didTapSkip" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HTc-Es-ecE"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RZV-Ie-dWO">
+                                <rect key="frame" x="20" y="64" width="353" height="694"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjp-KF-ynQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="218"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="18%">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapSmallTip" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ws6-5q-5Du"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIS-Pg-9Ia">
+                                        <rect key="frame" x="0.0" y="238" width="353" height="218"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="20%">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapMediumTip" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eLe-0v-qhh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ND-BU-bCl">
+                                        <rect key="frame" x="0.0" y="476" width="353" height="218"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="22%">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="75"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapLargeTip" destination="Y6W-OH-hqX" eventType="touchUpInside" id="27H-CT-pNg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RZV-Ie-dWO" secondAttribute="trailing" constant="20" id="9Ct-lz-8rT"/>
+                            <constraint firstItem="RZV-Ie-dWO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Gya-Fg-Gv0"/>
+                            <constraint firstItem="vA5-n5-idG" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="10" id="MTo-fB-v8A"/>
+                            <constraint firstItem="vA5-n5-idG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZFs-Vl-ywe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vA5-n5-idG" secondAttribute="trailing" constant="20" id="lks-ka-VBw"/>
+                            <constraint firstItem="vA5-n5-idG" firstAttribute="top" secondItem="RZV-Ie-dWO" secondAttribute="bottom" constant="20" id="oiK-Xd-6S7"/>
+                            <constraint firstItem="RZV-Ie-dWO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="rZm-tn-Iwj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="largeTipButton" destination="3ND-BU-bCl" id="YYV-hS-6kq"/>
+                        <outlet property="mediumTipButton" destination="mIS-Pg-9Ia" id="VEN-WY-LE0"/>
+                        <outlet property="skipButton" destination="vA5-n5-idG" id="0JI-vm-sIN"/>
+                        <outlet property="smallTipButton" destination="kjp-KF-ynQ" id="0XP-WM-u1v"/>
+                        <outlet property="stackView" destination="RZV-Ie-dWO" id="bxe-h8-0HV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="6"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
