@@ -18,19 +18,19 @@ This app contains 4 `UIViewController`s embedded inside a `NavigationController`
 <table>
   <tr>
     <td>
-        <p align="center"><strong>Home VC</strong></p>
+        <p style="text-align: center; font-weight: 600;">Home VC</p>
         <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/home-view-img.png" alt="Placeholder 1" width="100%" />
     </td>
     <td>
-        <p align="center"><strong>Confirm VC</strong></p>
+        <p style="text-align: center; font-weight: 600;">Home VC</p>
         <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/confirm-view-img.png" alt="Placeholder 2" width="100%" />
     </td>
     <td>
-        <p align="center"><strong>Tip VC</strong></p>
+        <p style="text-align: center; font-weight: 600;">Home VC</p>
         <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/tip-view-img.png" alt="Placeholder 3" width="100%" />
     </td>
     <td>
-        <p align="center"><strong>Receipt VC</strong></p>
+        <p style="text-align: center; font-weight: 600;">Home VC</p>
         <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/receipt-view-img.png" alt="Placeholder 4" width="100%" />
     </td>
   </tr>
