@@ -53,6 +53,7 @@ The following are the 4 topics that were covered in this app:
     <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/home-vc-entry-point.png" alt="storyboard" width="100%">
     
     2. Programmatically navigate to other view controllers using `UIBarButtonItem` element.
+    
         ```swift
         // Following code programmatically pushes the control to the next view controller
             
