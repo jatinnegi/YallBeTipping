@@ -51,6 +51,7 @@ The following are the 4 topics that were covered in this app:
 1. **`UINavigationController`**
     1. Embed the main entry point of the app inside the `UINavigationController`.
     <img src="https://raw.githubusercontent.com/jatinnegi/YallBeTipping/refs/heads/main/assets/home-vc-entry-point.png" alt="storyboard" width="100%">
+
     2. Programmatically navigate to other view controllers using `UIBarButtonItem` element.
     
         ```swift
