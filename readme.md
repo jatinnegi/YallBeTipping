@@ -53,6 +53,7 @@ The following are the 4 topics that were covered in this app:
     * Programmatically navigate to other view controllers using `UIBarButtonItem` element.
         ```swift
         // Following code programmatically pushes the control to the next view controller
+        
         lazy var barButton: UIBarButtonItem = {
             let button = UIBarButtonItem(
                 title: "Submit",
