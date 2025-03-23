@@ -45,3 +45,20 @@ This app contains 4 `UIViewController`s embedded inside a `NavigationController`
     </td>
   </tr>
 </table>
+
+The following are the 4 topics that were covered in this app:
+
+1. **`UINavigationController`**
+    * Embed the main entry point of the app inside the `UINavigationController`.
+    * Programmatically navigate to other view controllers using `UIBarButtonItem` element.
+    * ```swift
+        lazy var barButton: UIBarButtonItem = {
+            let button = UIBarButtonItem(
+                title: "Submit",
+                style: .plain,
+                target: self,
+                action: #selector(didTapBarButton)
+            )
+            return button
+        }()
+        ```
